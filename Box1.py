@@ -38,11 +38,11 @@ def Box_1_dataset_with_Constants(n_batch,batch_size,exemplos_por_batch):
                 yy=DampedPend(b,k,l,m)
                 y.append(yy)
                 tpred.append(l)
-#            plt.clf()                   #uncoment to graph
-#            plt.xlim([0, 50])           #uncoment to graph
-#            plt.ylim([-1, 1])           #uncoment to graph
-#            plt.plot(tpred,y)           #uncoment to graph
-#            plt.pause(0.5)              #uncoment to graph
+##            plt.clf()                   #uncoment to graph
+##            plt.xlim([0, 50])           #uncoment to graph
+##            plt.ylim([-1, 1])           #uncoment to graph
+##            plt.plot(tpred,y)           #uncoment to graph
+##            plt.pause(0.5)              #uncoment to graph
 
             t.append(tpred)
             position.append(y)
@@ -57,7 +57,7 @@ def Box_1_dataset_with_Constants(n_batch,batch_size,exemplos_por_batch):
     plt.show()
     print('shape(question) =',np.shape(question))
     print('Constantes =',np.shape(Constantes))
-#    sys.exit()
+    sys.exit()
     address = open("positions","wb")
     pickle.dump(inp, address)
     address.close()

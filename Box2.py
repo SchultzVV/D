@@ -161,7 +161,7 @@ def treine(epochs):
             loss.backward()
             optimizer.step()
         print(f'Epoch:{epoch+1},Loss:{loss.item():.4f}')
-##treine(1000)
+#treine(1000)
 '''
 #    O treinamento que foi efetivo, teve mudança         #
 #        entre os exemplos de treino conforme abaixo:    #
