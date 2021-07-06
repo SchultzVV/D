@@ -38,11 +38,11 @@ def Box_1_dataset_with_Constants(n_batch,batch_size,exemplos_por_batch):
                 yy=DampedPend(b,k,l,m)
                 y.append(yy)
                 tpred.append(l)
-##            plt.clf()                   #uncoment to graph
-##            plt.xlim([0, 50])           #uncoment to graph
-##            plt.ylim([-1, 1])           #uncoment to graph
-##            plt.plot(tpred,y)           #uncoment to graph
-##            plt.pause(0.5)              #uncoment to graph
+            plt.clf()                   #uncoment to graph
+            plt.xlim([0, 12])           #uncoment to graph
+            plt.ylim([-1, 1])           #uncoment to graph
+            plt.plot(tpred,y)           #uncoment to graph
+            plt.pause(0.5)              #uncoment to graph
 
             t.append(tpred)
             position.append(y)
@@ -198,7 +198,7 @@ def Predict_test_Scynet():
             plt.pause(0.03)
             #plt.close()
     plt.show()
-#Predict_test_Scynet()
+Predict_test_Scynet()
 #-------------------------------------------------------------------------------
 def Latent_values_Scynet1():
     fig = make_subplots(rows=1, cols=3,
